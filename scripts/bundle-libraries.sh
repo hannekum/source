@@ -87,7 +87,7 @@ _runas_so() {
 			return 0;
 		}
 
-		__attribute__((section(".init_array")))
+		__attribute__((section("_INIT,.init_array")))
 		static void *mangle_arg0_constructor = &mangle_arg0;
 	EOT
 
